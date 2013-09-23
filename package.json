@@ -1,8 +1,11 @@
 {
   "name"         : "acall.js",
-  "version"      : "0.0.2",
+  "version"      : "0.0.3",
   "description"  : "A simple wrapper for a node.js spawn call which gives an easy callback to get stdout.",
   "author"       : "Mattias Runge <mattias@runge.se>",
+  "devDependencies" : {
+    "assert" : ">= 0.4.9"
+  },
   "dependencies" : {
   },
   "engines"      : {
