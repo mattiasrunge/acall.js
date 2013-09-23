@@ -1,0 +1,17 @@
+{
+  "name"         : "acall.js",
+  "version"      : "0.0.1",
+  "description"  : "A simple wrapper for a node.js spawn call which gives an easy callback to get stdout.",
+  "author"       : "Mattias Runge <mattias@runge.se>",
+  "dependencies" : {
+  },
+  "engines"      : {
+    "node" : ">= 0.8.0"
+  },
+  "main"         : "acall.js",
+  "license"      : "GPLv2",
+  "repository"   : {
+    "type" : "git",
+    "url"  : "https://github.com/mattiasrunge/acall.js.git"
+  }
+}
