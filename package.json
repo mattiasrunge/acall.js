@@ -4,7 +4,9 @@
   "description"  : "A simple wrapper for a node.js spawn call which gives an easy callback to get stdout.",
   "author"       : "Mattias Runge <mattias@runge.se>",
   "devDependencies" : {
-    "assert" : ">= 0.4.9"
+    "assert" : ">= 0.4.9",
+    "mocha" : ">= 1.13.0",
+    "jshint" : ">= 2.1.11"
   },
   "dependencies" : {
   },
