@@ -1,6 +1,6 @@
 {
   "name"         : "acall.js",
-  "version"      : "0.0.3",
+  "version"      : "0.0.4",
   "description"  : "A simple wrapper for a node.js spawn call which gives an easy callback to get stdout.",
   "author"       : "Mattias Runge <mattias@runge.se>",
   "devDependencies" : {
@@ -16,5 +16,8 @@
   "repository"   : {
     "type" : "git",
     "url"  : "https://github.com/mattiasrunge/acall.js.git"
+  },
+  "scripts": {
+    "test": "make test"
   }
 }
