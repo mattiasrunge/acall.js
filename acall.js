@@ -51,7 +51,7 @@ module.exports = function(command, options, callback)
 
     process.on("error", function(error)
     {
-      callback(error);
+      callback(error.message);
     });
 
     process.on("exit", function(code)
