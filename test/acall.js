@@ -43,7 +43,7 @@ suite("acall.js", function()
   {
     acall("a_comman_that_should_not_exist", function(error)
     {
-      assert.ok(error.indexOf("Exited with result") === 0);
+      assert.notEqual(null, error);
       done();
     });
   });
