@@ -38,6 +38,7 @@ module.exports = function(command, options, callback)
     process.stdout.setEncoding(encoding);
     process.stderr.setEncoding(encoding);
 
+
     process.stdout.on("data", function(data)
     {
       stdout += data;
@@ -46,6 +47,11 @@ module.exports = function(command, options, callback)
     process.stderr.on("data", function(data)
     {
       stderr += data;
+    });
+
+    process.on("error", function(error)
+    {
+      callback(error);
     });
 
     process.on("exit", function(code)
@@ -60,7 +66,7 @@ module.exports = function(command, options, callback)
         callback("Exited with result: " + result + "\n" + stderr);
         return;
       }
-      
+
       callback(null, stdout);
     });
   }
