@@ -12,9 +12,8 @@ module.exports = function(command, options, callback)
   // Make sure the command is valid
   if (command instanceof Array)
   {
-    var tmp = command.shift();
-    args = command;
-    command = tmp;
+    var args = command.slice(0);
+    command = args.shift();
   }
 
   // If no options were given
